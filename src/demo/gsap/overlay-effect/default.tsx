@@ -19,7 +19,7 @@ export const Demo = () => {
     return (
         <div>
             <div className="flex justify-center">
-                <Select value={effect} onValueChange={setEffect}>
+                <Select value={effect} onValueChange={(val) => val && setEffect(val)}>
                     <SelectTrigger className="w-[180px]">
                         <SelectValue placeholder="Select a effect" />
                     </SelectTrigger>

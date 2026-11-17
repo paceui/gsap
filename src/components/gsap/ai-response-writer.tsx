@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-type ResponseWriterProps = {
+export type ResponseWriterProps = React.ComponentProps<typeof ScrollArea> & {
     text: string;
 };
 

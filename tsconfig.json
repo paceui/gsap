@@ -19,10 +19,9 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true,
-        "baseUrl": ".",
         "paths": {
             "@/*": ["./src/*"],
-            "fumadocs-mdx:collections/*": [".source/*"]
+            "fumadocs-mdx:collections/*": ["./.source/*"]
         }
     }
 }
