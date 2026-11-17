@@ -49,7 +49,7 @@ type DocsPageData = {
 const serverLoader = createServerFn({
     method: "GET",
 })
-    .inputValidator((slugs: string[]) => slugs)
+    .validator((slugs: string[]) => slugs)
     .handler(async ({ data }): Promise<DocsPageData> => {
         const page = source.getPage(data);
         if (!page) throw notFound();
